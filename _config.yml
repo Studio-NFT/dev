@@ -3,7 +3,7 @@ baseurl: /dev/
 
 # Site settings
 title: Studio-NFT
-email: 
+email: nftnation365@gmail.com
 description: "Studio-NFT brings NFTs to life through Manga and more..."
 
 
@@ -48,10 +48,6 @@ social:
     url: http://twitter.com/jekyllrb
   - title: facebook
     url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
   - title: github
     url: http://github.com/jekyll
 

@@ -829,6 +829,7 @@ section#contact .section-heading {
 
 section#contact .form-group {
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 section#contact .form-group input,
@@ -838,10 +839,12 @@ section#contact .form-group textarea {
 
 section#contact .form-group input.form-control {
     height: auto;
+    color: black;
 }
 
 section#contact .form-group textarea.form-control {
-    height: 236px;
+    height: 155px;
+    color: black;
 }
 
 section#contact .form-control:focus {

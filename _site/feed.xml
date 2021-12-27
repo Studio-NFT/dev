@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Studio-NFT</title>
+    <title>New World Explorers</title>
     <description>Studio-NFT brings NFTs to life through Manga and more...</description>
     <link>http://localhost:4000/dev//</link>
     <atom:link href="http://localhost:4000/dev//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 27 Dec 2021 16:51:29 +0000</pubDate>
-    <lastBuildDate>Mon, 27 Dec 2021 16:51:29 +0000</lastBuildDate>
+    <pubDate>Mon, 27 Dec 2021 18:18:46 +0000</pubDate>
+    <lastBuildDate>Mon, 27 Dec 2021 18:18:46 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>

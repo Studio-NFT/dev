@@ -69,6 +69,10 @@ h6 {
     margin: 0 auto;
 }
 
+.img-rounded-corners {
+    border-radius: 8px;
+}
+
 .bg-light-gray {
     /* edit */
     background-color: #f0f0f0;
@@ -361,15 +365,16 @@ section h3.section-subheading {
 }
 
     /* Edit */
-/* #portfolio {
+#portfolio {
 
     background-image: url('/dev//img/body-bg.jpg');
-
-} */
+    border-radius: 8px;
+}
 
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+    border-radius: 8px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -377,6 +382,8 @@ section h3.section-subheading {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    border-radius: 8px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -387,8 +394,9 @@ section h3.section-subheading {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
-    background: rgba(254,209,54,.9); /* Fallback when no plugin support */
-    background: rgba(144,192,24, .9);
+    background: rgba(94, 94, 94, 0.5);
+
+    border-radius: 8px; /* Updated*/
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -404,6 +412,7 @@ section h3.section-subheading {
     text-align: center;
     font-size: 20px;
     color: #fff;
+    border-radius: 8px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
@@ -466,27 +475,27 @@ section h3.section-subheading {
     line-height: 1.4;
     text-transform: uppercase;
     font-weight: 600;
-    color: #9251ac;
+    color: #289e32;
     letter-spacing: 1.5px;
 }
 .timeline__event__content {
     padding: 20px;
 }
 .timeline__event__date {
-    color: #f6a4ec;
+    color: #289e32;
     font-size: 1.5rem;
     font-weight: 600;
     white-space: nowrap;
 }
 .timeline__event__icon {
     border-radius: 8px 0 0 8px;
-    background: #9251ac;
+    background: #91ee98;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-basis: 40%;
     font-size: 2rem;
-    color: #9251ac;
+    color: #289e32;
     padding: 20px;
 }
 .timeline__event__icon i {
@@ -503,7 +512,7 @@ section h3.section-subheading {
     content: "";
     width: 2px;
     height: 100%;
-    background: #9251ac;
+    background: #91ee98;
     position: absolute;
     top: 52%;
     left: -3.5rem;
@@ -514,46 +523,63 @@ section h3.section-subheading {
     width: 5rem;
     height: 5rem;
     position: absolute;
-    background: #f6a4ec;
+    background: #91ee98;
     border-radius: 100%;
     left: -6rem;
     top: 50%;
     transform: translateY(-50%);
-    border: 2px solid #9251ac;
+    border: 2px solid #289e32;
 }
 .timeline__event--type2:before {
-    background: #87bbfe;
-    border-color: #555ac0;
+    background: #a6c8d8;
+    border-color: #1b739c;
 }
 .timeline__event--type2:after {
-    background: #555ac0;
+    background: #a6c8d8;
 }
 .timeline__event--type2 .timeline__event__date {
-    color: #87bbfe;
+    color: #1b739c;
 }
 .timeline__event--type2 .timeline__event__icon {
-    background: #555ac0;
-    color: #555ac0;
+    background: #a6c8d8;
+    color: #1b739c;
 }
 .timeline__event--type2 .timeline__event__title {
-    color: #555ac0;
+    color: #1b739c;
 }
 .timeline__event--type3:before {
-    background: #aff1b6;
-    border-color: #24b47e;
+    background: #8579ce;
+    border-color: #2c1aa0;
 }
 .timeline__event--type3:after {
-    background: #24b47e;
+    background: #8579ce;
 }
 .timeline__event--type3 .timeline__event__date {
-    color: #aff1b6;
+    color: #2c1aa0;
 }
 .timeline__event--type3 .timeline__event__icon {
-    background: #24b47e;
-    color: #24b47e;
+    background: #8579ce;
+    color: #2c1aa0;
 }
 .timeline__event--type3 .timeline__event__title {
-    color: #24b47e;
+    color: #2c1aa0;
+}
+.timeline__event--type4:before {
+    background: #e57d7d;
+    border-color: #b61515;
+}
+.timeline__event--type4:after {
+    background: #e57d7d;
+}
+.timeline__event--type4 .timeline__event__date {
+    color: #b61515;
+}
+.timeline__event--type4 .timeline__event__icon {
+    background: #e57d7d;
+    color: #b61515;
+}
+.timeline__event--type4 .timeline__event__title {
+    color: #b61515;
 }
 .timeline__event:last-child:after {
     content: none;
@@ -1004,15 +1030,18 @@ body {
 
 /* Old Style */
 .accordion {
-    background-color: #eee;
+    background-color: rgb(228, 228, 228);
     color: #444;
     cursor: pointer;
     padding: 30px;
     width: 100%;
-    text-align: left;
+    text-align: middle;
     border: none;
     outline: none;
     transition: 0.4s;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-family: "Kaushan Script",Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
   }
 
   .active, .accordion:hover {
@@ -1024,6 +1053,68 @@ body {
     background-color: white;
     display: none;
     overflow: hidden;
+    border-radius: 8px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif;
+    color: #777;
   }
 
+
+  .blockquote {
+    padding: 60px 80px 40px;
+    position: relative;
+}
+.blockquote p {
+    font-family: "Utopia-italic";
+    font-size: 35px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+/*blockquote p::before {
+    content: "\f095"; 
+    font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 6px;
+   vertical-align: middle;
+  font-size: 180px;
+ }*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.otro-blockquote{
+  font-size: 1.4em;
+  width:100%;
+  margin-top:30px;
+  margin-bottom:70px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif;
+  color: #777;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.otro-blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.otro-blockquote::after{
+  content: '';
+}
+
+.otro-blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
 

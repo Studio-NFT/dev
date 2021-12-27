@@ -6,11 +6,20 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Story</h2>
+                    
+                    <!-- Quote -->
+                    <blockquote class="otro-blockquote">
+                        Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, 
+                        they just saw something. It seemed obvious to them after a while. That's because they were able to connect experiences they've had and synthesize new things.
+                    </blockquote>
+
                     <h3 class="section-subheading text-muted">Meet Mimi, a Studio-NFT character with inherently <a style="color: #90c018"><strong>kind</strong></a> personality. 
                         This personality is coupled with one of her many personas. Its up to you how she exists in this world and the contributions she will make to society. 
                         Explore her personas ... </h3>
                 </div>
             </div>
+
+            
 
             <!-- Items -->
             <div class="row">
@@ -24,12 +33,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered img-rounded-corners" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{ post.title }}</h4>
-                        <p class="text-muted">Personality: {{ post.personality }}</p>
-                        <p class="text-muted">Persona: {{ post.persona }}</p>
+                        <p class="text-muted">Persona: <strong style="color:#{{post.colour}}">{{ post.persona }}</strong></p>
                     </div>
                 </div>
             {% endfor %}

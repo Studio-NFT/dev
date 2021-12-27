@@ -2,12 +2,13 @@
 title: Mimi
 subtitle: Social & Kind
 personality: Kind
-persona: Social
+persona: Ruthless
 layout: default
-modal-id: 1
+modal-id: 3
 date: 2014-07-18
-img: 1.png
-thumbnail: 1-thumbnail.png
+img: 3.png
+thumbnail: 3-thumbnail.png
+colour: b61515
 alt: image-alt
 category: Social, Kind
 description: Mimi (実心) is a character who is known for her kindness ...

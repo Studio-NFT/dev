@@ -7,11 +7,12 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #{{ site.data.template.color.secondary-dark }};
+    background-color: #303030;
+    color: white;
 }
 
 .text-muted {
-    color: #{{ site.data.template.color.muted }};
+    color: white;
 }
 
 .text-primary {
@@ -36,14 +37,14 @@ a.active {
 }
 
 a {
-    color: #{{ site.data.template.color.primary }};
+    color: white;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #{{ site.data.template.color.secondary }};
+    color: white;
 }
 
 h1,
@@ -67,11 +68,15 @@ h6 {
 
 .bg-light-gray {
     /* edit */
-    background-color: #f0f0f0;
+    background-color: #303030;
 }
 
 .bg-darkest-gray {
-    background-color: #222;
+    background-color: #303030;
+}
+
+.bg-primary {
+    background-color: #{{ site.data.template.color.primary }};
 }
 
 .btn-primary {
@@ -332,15 +337,16 @@ section {
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     font-size: 40px;
 }
 
 section h3.section-subheading {
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
-    font-size: 16px;
+    font-size: 20px;
     font-style: italic;
     font-weight: 400;
 }
@@ -446,26 +452,23 @@ section h3.section-subheading {
 
 /* New Version - Timeline*/
 .timeline {
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    margin: 5% auto;
+    width: 80%;
+    margin: 0% auto;
 }
 .timeline__event {
-    background: #fff;
+    background: #222222;
     margin-bottom: 20px;
     position: relative;
     display: flex;
     margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 .timeline__event__title {
     font-size: 1.2rem;
     line-height: 1.4;
     text-transform: uppercase;
     font-weight: 600;
-    color: #289e32;
+    color: #91ee98;
     letter-spacing: 1.5px;
 }
 .timeline__event__content {
@@ -482,33 +485,33 @@ section h3.section-subheading {
     background: #91ee98;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-basis: 40%;
+    justify-content: left;
+    flex-basis: 0%;
     font-size: 2rem;
     color: #289e32;
     padding: 20px;
 }
 .timeline__event__icon i {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: -65px;
     font-size: 2.5rem;
     transform: translateY(-50%);
 }
 .timeline__event__description {
-    flex-basis: 60%;
+    flex-basis: 0%;
 }
-.timeline__event:after {
+/* .timeline__event:after {
     content: "";
     width: 2px;
     height: 100%;
     background: #91ee98;
-    position: absolute;
+    position: relative;
     top: 52%;
     left: -3.5rem;
     z-index: -1;
-}
-.timeline__event:before {
+} */
+/* .timeline__event:before {
     content: "";
     width: 5rem;
     height: 5rem;
@@ -519,14 +522,14 @@ section h3.section-subheading {
     top: 50%;
     transform: translateY(-50%);
     border: 2px solid #289e32;
-}
-.timeline__event--type2:before {
+} */
+/* .timeline__event--type2:before {
     background: #a6c8d8;
     border-color: #1b739c;
 }
 .timeline__event--type2:after {
     background: #a6c8d8;
-}
+} */
 .timeline__event--type2 .timeline__event__date {
     color: #1b739c;
 }
@@ -535,15 +538,15 @@ section h3.section-subheading {
     color: #1b739c;
 }
 .timeline__event--type2 .timeline__event__title {
-    color: #1b739c;
+    color: #a6c8d8;
 }
-.timeline__event--type3:before {
+/* .timeline__event--type3:before {
     background: #8579ce;
     border-color: #2c1aa0;
 }
 .timeline__event--type3:after {
     background: #8579ce;
-}
+} */
 .timeline__event--type3 .timeline__event__date {
     color: #2c1aa0;
 }
@@ -552,15 +555,15 @@ section h3.section-subheading {
     color: #2c1aa0;
 }
 .timeline__event--type3 .timeline__event__title {
-    color: #2c1aa0;
+    color: #8579ce;
 }
-.timeline__event--type4:before {
+/* .timeline__event--type4:before {
     background: #e57d7d;
     border-color: #b61515;
 }
 .timeline__event--type4:after {
     background: #e57d7d;
-}
+} */
 .timeline__event--type4 .timeline__event__date {
     color: #b61515;
 }
@@ -569,7 +572,7 @@ section h3.section-subheading {
     color: #b61515;
 }
 .timeline__event--type4 .timeline__event__title {
-    color: #b61515;
+    color: #e57d7d;
 }
 .timeline__event:last-child:after {
     content: none;
@@ -810,7 +813,6 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -827,16 +829,17 @@ section#contact .form-group {
 section#contact .form-group input,
 section#contact .form-group textarea {
     padding: 20px;
+    background-color: #303030;
 }
 
 section#contact .form-group input.form-control {
     height: auto;
-    color: black;
+    color: #{{ site.data.template.color.primary }};
 }
 
 section#contact .form-group textarea.form-control {
     height: 155px;
-    color: black;
+    color: #{{ site.data.template.color.primary }};
 }
 
 section#contact .form-control:focus {
@@ -1024,8 +1027,8 @@ body {
 
 /* Old Style */
 .accordion {
-    background-color: rgb(228, 228, 228);
-    color: #444;
+    background-color: #222222;
+    color: white;
     cursor: pointer;
     padding: 30px;
     width: 100%;
@@ -1039,7 +1042,7 @@ body {
   }
 
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #{{ site.data.template.color.primary }};
   }
   
   .panel {
@@ -1053,31 +1056,32 @@ body {
   }
 
 
-  .blockquote {
+.blockquote {
     padding: 60px 80px 40px;
     position: relative;
+    text-align: left;
 }
 .blockquote p {
     font-family: "Utopia-italic";
     font-size: 35px;
     font-weight: 700px;
-    text-align: center;
+    text-align: left;
 }
 
-.otro-blockquote{
+.otro-blockquote {
   font-size: 1.4em;
   width:100%;
-  margin-top:30px;
   margin-bottom:70px;
+  background-color: #222222;
   font-family: {{ site.data.template.font.secondary }};
-  color: #{{ site.data.template.color.muted }};
-  font-style:italic;
+  color: #b1b0a6;
+  font-style: italic;
   padding:1.2em 30px 1.2em 75px;
   border-left:10px solid #{{ site.data.template.color.primary }} ;
   line-height:1.6;
   position: relative;
   border-radius: 8px;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  text-align: left;
 }
 
 .otro-blockquote::before{
@@ -1096,7 +1100,7 @@ body {
 
 .otro-blockquote span{
   display:block;
-  color:#333333;
+  color:white;
   font-style: normal;
   font-weight: bold;
   margin-top:1em;
@@ -1107,17 +1111,15 @@ body {
 .our-team{
     margin-top: 15px;
     padding: 20px 15px 30px;
-    background: rgb(228, 228, 228);
+    background: #222222;
     border-radius: 8px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
     text-align: center;
-    border-bottom:10px solid #{{ site.data.template.color.primary }} ;
 }
 .our-team .pic{
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: rgb(228, 228, 228);
+    background: #222222;
     padding: 10px;
     margin-bottom: 25px;
     transition: all 0.5s ease 0s;
@@ -1135,7 +1137,7 @@ body {
     display: block;
     font-size: 20px;
     font-weight: 600;
-    color: #2e282a;
+    color: white;
     text-transform: uppercase;
     margin: 0 0 7px 0;
 }

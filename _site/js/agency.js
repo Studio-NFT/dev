@@ -73,21 +73,21 @@ var light = {
 var colors = ["#f5c156", "#e6616b", "#5cd3ad"];
 
 function drawLight() {
-    ctx.beginPath();
-    ctx.arc(light.x, light.y, 1000, 0, 2 * Math.PI);
-    var gradient = ctx.createRadialGradient(light.x, light.y, 0, light.x, light.y, 1000);
-    gradient.addColorStop(0, "#3b4654");
-    gradient.addColorStop(1, "#2c343f");
-    ctx.fillStyle = gradient;
-    ctx.fill();
+    // ctx.beginPath();
+    // ctx.arc(light.x, light.y, 1000, 0, 2 * Math.PI);
+    // var gradient = ctx.createRadialGradient(light.x, light.y, 0, light.x, light.y, 1000);
+    // gradient.addColorStop(0, "#3b4654");
+    // gradient.addColorStop(1, "#2c343f");
+    // ctx.fillStyle = gradient;
+    // ctx.fill();
 
-    ctx.beginPath();
-    ctx.arc(light.x, light.y, 20, 0, 2 * Math.PI);
-    gradient = ctx.createRadialGradient(light.x, light.y, 0, light.x, light.y, 5);
-    gradient.addColorStop(0, "#fff");
-    gradient.addColorStop(1, "#3b4654");
-    ctx.fillStyle = gradient;
-    ctx.fill();
+    // ctx.beginPath();
+    // ctx.arc(light.x, light.y, 20, 0, 2 * Math.PI);
+    // gradient = ctx.createRadialGradient(light.x, light.y, 0, light.x, light.y, 5);
+    // gradient.addColorStop(0, "#fff");
+    // gradient.addColorStop(1, "#3b4654");
+    // ctx.fillStyle = gradient;
+    // ctx.fill();
 }
 
 function Box() {
@@ -176,7 +176,7 @@ function Box() {
             ctx.lineTo(points[n].startX, points[n].startY);
             ctx.lineTo(points[n].endX, points[n].endY);
             ctx.lineTo(points[i].endX, points[i].endY);
-            ctx.fillStyle = "rgba(44,52,63,0.2)";
+            ctx.fillStyle = "rgba(44,52,63,0.04)";
             ctx.fill();
         };
     }

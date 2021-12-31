@@ -5,10 +5,20 @@
  */
 
 body {
-    overflow-x: hidden;
+    /* overflow: scroll; */
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #070707;
+    background-color: #2c343f;
     color: white;
+    padding: 0;
+    margin: 0;
+}
+
+#canvas{
+    overflow: scroll;
+    background-color: #2c343f;
+    position: fixed;
+    width: 100%;
+    height: 100%;	
 }
 
 .text-muted {
@@ -74,9 +84,15 @@ h6 {
 .bg-darkest-gray {
     background-color: #303030;
 }
+.bg-trans {
+    background-color: rgba(34, 34, 34, 0.75);
+    position: relative;
+}
+
 
 .bg-primary {
     background-color: #{{ site.data.template.color.primary }};
+    
 }
 
 .btn-primary {
@@ -266,7 +282,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: rgba(34, 34, 34, 0.75);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -276,20 +292,24 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     text-align: center;
+    position: relative;
     color: #fff;
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/top.png');
     background-position: center center;
     background-repeat: none;
+    /* background-color: rgba(34, 34, 34, 0.75); */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    z-index: 1;
 }
 
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    z-index: 1;
 }
 
 header .intro-text .intro-lead-in {
@@ -1029,7 +1049,6 @@ body {
 .accordion {
     background-color: #222222;
     color: white;
-    cursor: pointer;
     padding: 30px;
     width: 100%;
     text-align: middle;
@@ -1039,6 +1058,7 @@ body {
     border-radius: 8px;
     margin-top: 15px;
     font-family: {{ site.data.template.font.primary }};
+    
   }
 
   .active, .accordion:hover {
@@ -1046,11 +1066,12 @@ body {
   }
   
   .panel {
-    padding: 0 20px;
+    padding: 5px 5px;
     background-color: white;
     display: none;
     overflow: hidden;
     border-radius: 8px;
+    width: 100%;
     font-family: {{ site.data.template.font.secondary }};
     color: #{{ site.data.template.color.muted }};
   }
@@ -1175,3 +1196,4 @@ body {
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }
 }
+
